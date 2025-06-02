@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    font-family: '나눔스퀘어라운드', '메이플스토리';
+}
+div{
+    box-sizing: border-box;
+}
+h1,h5,h2,h3{
+    font-family: '나눔스퀘어라운드 heavy';
+    margin: 0;
+}
+.main{
+    width: 100%;
+    padding: 100px;
+    padding-bottom: 0;
+    background:linear-gradient(180deg, cornflowerblue, rgb(65, 99, 161));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.main_text{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.main_text button ,.subhead button{
+    width: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+.main_text button:hover ,.subhead button:hover{
+    background-color: rgb(104, 103, 103);
+    cursor: pointer;
+
+}
+.main_text button:active ,.subhead button:active{
+    background-color: rgb(44, 44, 44);
+
+}
+.main_img{
+    width: 500px;
+    
+
+}
+.subhead{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.offer{
+    width: 100%;
+    padding: 40px;
+    background-color: rgb(115, 115, 250);
+    color: white;
+    text-align: center;
+}
+.offer_icon{
+    display: flex;
+    justify-content: center;
+
+}
+.offer_icon-item{
+    width: fit-content;
+    margin: 40px 25px  0 25px;
+
+}
+.offer_icon-item i{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: rgb(115, 115, 250);
+    font-size: 60px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.canDo{
+    width: 100%;
+    padding: 50px;
+
+}
+.canDo_head{
+    text-align: center;
+    position: relative;
+    z-index: 20;
+
+}
+.canDo_head h5{
+    color: gray;
+}
+.canDo_content{
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:  30px auto 0 auto;
+
+}
+.canDo_box{
+    position: relative;
+}
+.canDo_content img{
+    width: 100%;
+    display: block;
+}
+.canDo_text{
+width: 100%;
+height: 100%;
+position: absolute;
+background-color: rgb(0, 0, 0,0.3);
+color: white;
+padding-top: 70px;
+padding-left: 50px;
+font-size: 20px;
+}
+.canDo_text-head{
+    margin-bottom: 30px;
+}
+.canDo_anibox{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    position: absolute;
+    z-index: 5;
+    transition: all 1s;
+}
+.canDo_box:hover {
+    .canDo_anibox{
+        border: 30px solid white;
+    }
+ 
+
+}
+.sns_icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sns_icon a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color:rgb(85, 85, 185) ;
+    font-size: 25px;
+    padding-top: 23px;
+    text-align: center;
+    color: white;
+}
+.copyright{
+    text-align: center;
+    margin: 40px;
+}
+
+ @media screen and (max-width:768px){
+    .main{
+    flex-direction: column;
+    }
+    .main_text{
+        text-align: center;
+    }
+    .canDo_content{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .canDo_text{
+        font-size: 15px;
+    }
+ 
+ }
+ 
